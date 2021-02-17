@@ -2,7 +2,7 @@ name: PreScaleOperator
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   Tests:
     runs-on: ubuntu-latest
