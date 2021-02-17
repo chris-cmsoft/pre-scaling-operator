@@ -14,7 +14,7 @@ jobs:
           go-version: '^1.13.1'
       - name: Setting up GOPATH
         run: |
-          echo ::set-env name=GOPATH::${GITHUB_WORKSPACE}/go
+          env | grep GOPATH
       - name: Run tests
         run: |
           make test
