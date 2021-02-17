@@ -1,0 +1,13 @@
+name: ChaosOperator-E2E
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Tests:
+    runs-on: ubuntu-latest
+      steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v1
+      - name: Run tests
+        uses: make test
