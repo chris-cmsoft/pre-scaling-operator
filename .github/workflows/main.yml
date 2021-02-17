@@ -9,5 +9,12 @@ jobs:
     steps:
       - name: Checkout codebase
         uses: actions/checkout@v1
+      - uses: actions/setup-go@v2
+        with:
+          go-version: '^1.13.1'
+      - name: Setting up GOPATH
+        run: |
+          echo ::set-env name=GOPATH::${GITHUB_WORKSPACE}/go
       - name: Run tests
-        uses: make test
+        run: |
+          make test
