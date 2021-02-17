@@ -1,4 +1,4 @@
-name: ChaosOperator-E2E
+name: PreScaleOperator
 on:
   push:
     branches:
