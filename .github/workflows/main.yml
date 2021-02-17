@@ -6,7 +6,7 @@ on:
 jobs:
   Tests:
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - name: Checkout codebase
         uses: actions/checkout@v1
       - name: Run tests
